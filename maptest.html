@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <link rel="stylesheet" href="\path\to\leaflet.css" />
+   <script src="\path\to\leaflet.js"></script>
+   </head>
+ <body>
+  <div id = "map" style = "width:900px; height:600px;"></div>
+  <script>
+  var map = L.map('map').fitWorld(); //生成一個地圖
+  
+  var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { //設置基本底圖
+    maxZoom: 19,
+    attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+ 
+  map.locate({ //向使用者要求座標位置
+  // watch: true, 是否持續監測使用者位置
+  setView: true, //是否以使用者所在位置為地圖中心
+  timeout: 10000, // 觸發locationerror之前等待的毫秒數
+  // maximumAge: 0, 抓取新座標間隔時間?
+  enableHighAccuracy: true // 是否要高精準度的抓位置
+  }); 
+  
+  var catIcon = new L.icon({  //自定義圖標
+        iconUrl: 'leaflet/images/cat.png',
+        iconSize:     [30, 30] // 圖標大小
+        // iconAnchor:   [22, 94], //圖標位置
+        // popupAnchor:  [-3, -76] //說明位置
+  });
+  var marker = L.marker([25.02985, 121.53594]).bindPopup("<b>現在位置</b>").addTo(map);
+  
+  var cat1 = L.marker([25.020032, 121.548926], {icon: catIcon}).bindPopup('<b>喵星人暱稱:</b>咪咪<br><b>最近一次發現時間:</b>2022/05/22<br><b>是否親人:</b>是<br><b>健康狀態:</b>健康<br><a href="">查看詳細資料</a>'),
+      cat2 = L.marker([25.019507, 121.545138], {icon: catIcon}).bindPopup('<b>喵星人暱稱:</b>小白<br><b>最近一次發現時間:</b>2022/05/22<br><b>是否親人:</b>否<br><b>健康狀態:</b>有口炎'),
+      cat3 = L.marker([25.017523, 121.549494], {icon: catIcon}).bindPopup('<b>喵星人暱稱:</b>小黑<br><b>最近一次發現時間:</b>2022/05/22<br><b>是否親人:</b>是<br><b>健康狀態:</b>健康'),
+	  cat4 = L.circle([25.01693, 121.546501],{color: '#90EE90',radius: 100}).bindPopup('<b>喵星人暱稱:</b>小黃<br><b>最近一次發現時間:</b>2022/05/22<br><b>是否親人:</b>是<br><b>健康狀態:</b>健康'); //圓圈型
+  
+  var cats = L.layerGroup([cat1, cat2, cat3, cat4]);
+ 
+  var overlayMaps = {
+    "附近喵星人": cats
+  };
+  
+  var layerControl = L.control.layers(null, overlayMaps).addTo(map);
+  
+  function onLocationFound(e) { //使用者提供座標後要做什麼事
+    marker.setLatLng(e.latlng); // 移動 marker 到使用者所在位置
+}
+
+map.on('locationfound', onLocationFound);
+function onLocationError(e) { //未取得座標要做什麼事
+  console.log("e", e);
+  window.alert('無法判斷您的所在位置，無法使用此功能。預設地點將為 大安森林公園');
+  map.setView([25.02985, 121.53594], 18); // 中心移到大安森林公園
+}
+
+map.on('locationerror', onLocationError);
+  
+  var popup = L.popup();
+  function onMapClick(e) { //使用者點及滑鼠後的彈出視窗事件控制
+   popup
+    .setLatLng(e.latlng)
+    .setContent("此處經緯度" + e.latlng.toString())
+    .openOn(map);
+}
+
+map.on('click', onMapClick);
+  </script>
+ </body>
+</html>
