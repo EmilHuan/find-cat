@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Rectangle 116 */
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  font-size: 1.5rem;
+  width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+header img:hover {
+  -webkit-box-shadow: 0.2rem 0.2rem gray;
+          box-shadow: 0.2rem 0.2rem gray;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+header h1.title {
+  padding-left: 2vw;
+  display: inline;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: 2vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form label {
+  position: relative;
+}
+
+form label::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg width= '$size' height= '$size' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.531 14.617L20.814 18.899L19.399 20.314L15.117 16.031C13.5237 17.3082 11.542 18.0029 9.5 18C4.532 18 0.5 13.968 0.5 9C0.5 4.032 4.532 0 9.5 0C14.468 0 18.5 4.032 18.5 9C18.5029 11.042 17.8082 13.0237 16.531 14.617ZM14.525 13.875C15.7941 12.5699 16.5029 10.8204 16.5 9C16.5 5.132 13.367 2 9.5 2C5.632 2 2.5 5.132 2.5 9C2.5 12.867 5.632 16 9.5 16C11.3204 16.0029 13.0699 15.2941 14.375 14.025L14.525 13.875V13.875Z' fill='%23AAACAE'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form input {
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  border: none;
+  -webkit-box-shadow: 0 0.4rem 1rem #2020201C;
+          box-shadow: 0 0.4rem 1rem #2020201C;
+  width: 100%;
+  min-width: 25rem;
+}
+
+form input::-webkit-input-placeholder {
+  font-size: 2rem;
+  color: #C4C4C4;
+}
+
+form input:-ms-input-placeholder {
+  font-size: 2rem;
+  color: #C4C4C4;
+}
+
+form input::-ms-input-placeholder {
+  font-size: 2rem;
+  color: #C4C4C4;
+}
+
+form input::placeholder {
+  font-size: 2rem;
+  color: #C4C4C4;
+}
+
+.block {
+  border: none;
+  -webkit-box-shadow: 0 0.4rem 1rem #2020201C;
+          box-shadow: 0 0.4rem 1rem #2020201C;
+}
+
+div.trace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  padding: 2vh;
+  border-radius: 4rem;
+  min-height: 40%;
+}
+
+div.trace img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  max-height: 40vh;
+}
+
+div.trace .trace-icons {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.trace .trace-icons .trace_icons-device {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 40%;
+}
+
+div.trace .trace-icons .trace_icons-device #pic1 {
+  position: absolute;
+  width: 7vw;
+  min-width: 5rem;
+  left: 0%;
+}
+
+div.trace .trace-icons .trace_icons-device #pic2 {
+  position: absolute;
+  width: 7vw;
+  min-width: 5rem;
+  left: 15%;
+}
+
+div.trace .trace-icons .trace_icons-device #pic3 {
+  position: absolute;
+  width: 7vw;
+  min-width: 5rem;
+  left: 30%;
+}
+
+div.trace .trace-icons .trace_icons-device #pic4 {
+  position: absolute;
+  width: 7vw;
+  min-width: 5rem;
+  left: 45%;
+}
+
+div.trace .trace-icons .trace_icons-device #pic5 {
+  position: absolute;
+  width: 7vw;
+  min-width: 5rem;
+  left: 60%;
+}
+
+div.trace .trace-icons p {
+  padding-top: 2.5vw;
+  font-size: 3vw;
+  color: #ADADB7;
+}
+
+div.trace .trace-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+div.trace .trace-icons a:hover, div.trace .trace-icons a:active {
+  color: #ADADB7;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+div.title2 {
+  width: 80%;
+  margin: 1vh;
+}
+
+div.title2 h1 {
+  left: 3rem;
+}
+
+section.task_list {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 25vh;
+}
+
+section.task_list .task_left {
+  -ms-flex-preferred-size: 67.5%;
+      flex-basis: 67.5%;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.task_list .task_left .task_icon {
+  -ms-flex-preferred-size: 42.5%;
+      flex-basis: 42.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+}
+
+section.task_list .task_left .task_icon .task_block {
+  width: 12.5vh;
+  height: 12.5vh;
+  background-color: #F3F5F8;
+  border-radius: 2rem;
+}
+
+section.task_list .task_left .task_icon p {
+  color: #ADADB7;
+  font-size: 1.2rem;
+}
+
+section.task_list .task_left .task_icon p span.symbol {
+  font-size: 2rem;
+}
+
+section.task_list .task_left .task_text {
+  -ms-flex-preferred-size: 52.5%;
+      flex-basis: 52.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+section.task_list .task_left .task_text p {
+  font-size: 1rem;
+  color: #ADADB7;
+}
+
+section.task_list .task_left .task_text a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+section.task_list .task_left .task_text a:hover, section.task_list .task_left .task_text a:active {
+  color: #ADADB7;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+section.task_list .task_left .task_text button {
+  background-color: #2E2E31;
+  border: none;
+  color: white;
+  margin-left: 5%;
+  padding: 1rem 1rem;
+  width: 90%;
+  height: 25%;
+  border-radius: 1rem;
+  font: normal 0.8em "Mulish", sans-serif;
+}
+
+section.task_list .task_left .task_text button:hover, section.task_list .task_left .task_text button:active {
+  background-color: #ADADB7;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+section.task_list .task_right {
+  -ms-flex-preferred-size: 27.5%;
+      flex-basis: 27.5%;
+  position: relative;
+}
+
+section.task_list .task_right div {
+  border-radius: 2rem;
+  height: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  width: 95%;
+  border-radius: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0 6rem 0;
+}
+
+section.join .join_left {
+  height: 70%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: #C4C4C4;
+  border-radius: 2rem;
+}
+
+section.join .join_right {
+  height: 70%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.join .join_right p {
+  font-size: 1.5rem;
+}
+
+section.join .join_right a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+section.join .join_right a:hover, section.join .join_right a:active {
+  color: #ADADB7;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+section.join .join_right div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.join .join_right div.button button {
+  background: transparent;
+  border: none;
+  color: #ADADB7;
+  margin-left: 5%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  background-color: white;
+  padding: 0.75rem 0;
+  -webkit-box-shadow: 0 -0.2rem 1rem #cacaca;
+          box-shadow: 0 -0.2rem 1rem #cacaca;
+  height: 5rem;
+}
+
+footer div.container {
+  width: 80%;
+  margin: 0 10%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer div.container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #C4C4C4;
+  width: 5rem;
+}
+
+footer div.container a svg path, footer div.container a svg circle {
+  stroke: #ADADB7;
+}
+
+footer div.container a p {
+  position: absolute;
+  bottom: 0em;
+}
+
+footer div.container a:hover, footer div.container a:active {
+  color: black;
+}
+
+footer div.container a:hover svg path, footer div.container a:hover svg circle, footer div.container a:active svg path, footer div.container a:active svg circle {
+  stroke: black;
+}
+
+footer div.container a:hover p, footer div.container a:active p {
+  color: black;
+}
+
+footer div.container a.report {
+  position: absolute;
+  height: 11vw;
+  width: 11vw;
+  bottom: 1.5rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 1.5rem;
+  background-color: #2E2E31;
+}
+
+footer div.container a.report svg path, footer div.container a.report svg circle {
+  stroke: #AEFA24;
+}
+/*# sourceMappingURL=style.css.map */

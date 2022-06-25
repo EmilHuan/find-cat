@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+
+}
+html{
+    font-size: 62.5%;
+}
+$content_width: 95%;
+/* Rectangle 116 */
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+}
+header{
+    display: flex;
+    margin: 1rem;
+    font-size: 1.5rem;
+    width: 85%;
+    align-items: center;
+    img{
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        
+        &:hover{
+            box-shadow: 0.2rem 0.2rem gray;
+            transform:scale(1.2,1.2);
+            transition: all 0.5s ease-out;
+        }
+        
+    }
+
+    h1.title{
+        padding-left: 2vw;
+        display: inline;
+    }
+    
+}
+
+$size: 2rem;
+
+
+
+form {
+    display: flex;
+    width: 85%;
+    margin: 2vh;
+    justify-content: center;
+
+    label{
+        position: relative;
+    }
+    // 建立label的假元素
+    label::before{
+        content: "";
+        position: absolute;
+        left: 1rem;
+        top: 0;
+        bottom: 0;
+        width: $size;
+        background-image: url("data:image/svg+xml,%3Csvg width= '$size' height= '$size' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.531 14.617L20.814 18.899L19.399 20.314L15.117 16.031C13.5237 17.3082 11.542 18.0029 9.5 18C4.532 18 0.5 13.968 0.5 9C0.5 4.032 4.532 0 9.5 0C14.468 0 18.5 4.032 18.5 9C18.5029 11.042 17.8082 13.0237 16.531 14.617ZM14.525 13.875C15.7941 12.5699 16.5029 10.8204 16.5 9C16.5 5.132 13.367 2 9.5 2C5.632 2 2.5 5.132 2.5 9C2.5 12.867 5.632 16 9.5 16C11.3204 16.0029 13.0699 15.2941 14.375 14.025L14.525 13.875V13.875Z' fill='%23AAACAE'/%3E%3C/svg%3E%0A");
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    input {
+        padding: 1rem 4rem;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0.4rem 1rem #2020201C;
+        width: 100%;
+        min-width: 25rem;
+        
+
+        &::placeholder{
+            font-size: 2rem;
+            color: #C4C4C4;
+        }
+      }
+
+}
+
+
+.block{
+    border: none;
+    box-shadow: 0 0.4rem 1rem #2020201C;
+}
+
+div.trace{
+    display: flex;
+    width: $content_width;
+    padding: 2vh;
+    border-radius: 4rem;
+    min-height: 40%;
+
+
+
+    img{
+        flex-basis: 40%;
+        max-height: 40vh;
+    }
+    .trace-icons{
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 1rem;
+        justify-content: space-around;
+        .trace_icons-device{
+            position: relative;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 40%;
+            #pic1{
+                position: absolute;
+                width: 7vw;
+                min-width: 5rem;
+                left: 0%;
+            }
+            #pic2{
+                position: absolute;
+                width: 7vw;
+                min-width: 5rem;
+                left: 15%;
+            }
+            #pic3{
+                position: absolute;
+                width: 7vw;
+                min-width: 5rem;
+                left: 30%;
+            }
+            #pic4{
+                position: absolute;
+                width: 7vw;
+                min-width: 5rem;
+                left: 45%;
+            }
+            #pic5{
+                position: absolute;
+                width: 7vw;
+                min-width: 5rem;
+                left: 60%;
+            }
+        }
+
+        p{
+            padding-top: 2.5vw;
+            font-size: 3vw;
+            color: #ADADB7;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            &:hover,&:active {
+                color: #ADADB7;
+                transition: all 0.5s ease-out;
+            }
+        }
+    }
+
+}
+
+
+div.title2{
+    width: 80%;
+    margin: 1vh;
+    h1{
+        left: 3rem;
+    }
+}
+
+section.task_list{
+    width:$content_width;
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+
+    .task_left{
+        flex-basis: 67.5%;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: space-around;
+
+        .task_icon{
+            flex-basis: 42.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1rem;
+
+            .task_block{
+                width: 12.5vh;
+                height: 12.5vh;
+                background-color: #F3F5F8;
+                border-radius: 2rem;
+                
+            }
+            p{
+                color:#ADADB7;
+                font-size: 1.2rem;
+                span.symbol{
+                    font-size: 2rem; 
+                }    
+            }
+
+
+        }
+        .task_text{
+            flex-basis: 52.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 1rem;
+            font-size: 1.5rem;
+            p{
+                font-size: 1rem;
+                color: #ADADB7;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+                &:hover,&:active {
+                    color: #ADADB7;
+                    transition: all 0.5s ease-out;
+                }
+            }
+            
+            button{
+                background-color: #2E2E31;;
+                border: none;
+                color: white;
+                margin-left: 5%;
+                padding: 1rem 1rem;
+                width: 90%;
+                height: 25%;
+                border-radius: 1rem;
+                font: normal 0.8em "Mulish", sans-serif; 
+                &:hover,&:active {
+                    background-color: #ADADB7;
+                    transition: all 0.5s ease-out;
+                }               
+            }        
+
+        }
+
+    }
+
+    .task_right{
+        flex-basis: 27.5%;
+        position:relative;
+        div{
+            border-radius: 2rem;
+            height: 50%;
+            font-size: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+
+}
+
+section.join{
+    display: flex;
+    height: 30vh;
+    width: $content_width;
+    border-radius: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem 0 6rem 0;
+    .join_left{
+        height: 70%;
+        flex-basis: 40%;
+        background-color: #C4C4C4;
+        border-radius: 2rem;
+    }
+    .join_right{
+        height: 70%;
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        p{
+            font-size: 1.5rem;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            &:hover,&:active {
+                color: #ADADB7;
+                transition: all 0.5s ease-out;
+            }
+        }
+        div.button{
+            display: flex;
+            button{
+                background: transparent;
+                border: none;
+                color: #ADADB7;
+                margin-left: 5%;
+            }
+        }
+
+    }
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: white;
+    padding: 0.75rem 0 ;
+    box-shadow: 0 -0.2rem 1rem rgb(202, 202, 202);
+    height: 5rem;
+    div.container{
+        width: 80%;
+        margin: 0 10% ;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+            color: #C4C4C4;
+            width: 5rem;
+            svg{
+                path, circle{
+                    stroke:#ADADB7;
+
+                }
+            }
+
+            p{
+                position: absolute;
+                bottom: 0em;
+            }
+        }
+        a:hover,a:active{
+            svg{
+                path, circle{
+                    stroke:black;
+                }
+            }
+            color: black;
+            p{
+                color: black; 
+            }
+        }
+
+        a.report{
+            position: absolute;
+            height: 11vw;
+            width: 11vw;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translate(-50%,0);
+            border-radius: 1.5rem;
+            background-color: #2E2E31;
+            svg{
+                path, circle{
+                    stroke:#AEFA24;
+
+                }
+            }
+
+        }
+        
+        
+
+
+
+    }
+
+}
+

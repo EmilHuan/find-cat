@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="something" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DuDu" />
+    <!-- <base target="_blank"/> -->
+
+    <!-- icon region -->
+    <link rel="shortcut icon" href="./picture/pawprint.png" />
+    <link rel="bookmark" href="" />
+
+    <!-- google font 的設定  放在 stylesheet前面-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font 的設定  end -->
+
+    <!-- CSS設定 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Meow</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./picture/Ellipse 18.png" alt="facial photo" />
+      <h1 class="title">Hi, Lucy!</h1>
+    </header>
+
+    <form action="">
+      <!-- 設定假的label來把要放進搜尋框裡的SVG 推進去 -->
+      <label for=""></label>
+      <input
+        type="text"
+        maxlength="30"
+        name=""
+        id="search"
+        placeholder="搜尋案件、名字"
+      />
+    </form>
+
+    <div class="trace block">
+      <!-- google 的圖 -->
+      <img src="./picture/Rectangle 116.png" alt="googlemap" />
+      <div class="trace-icons">
+        <div class="trace_icons-device">
+          <img id="pic1" src="./picture/device1.png" alt="" />
+          <img id="pic2" src="./picture/device2.png" alt="" />
+          <img id="pic3" src="./picture/device3.png" alt="" />
+          <img id="pic4" src="./picture/device4.png" alt="" />
+          <img id="pic5" src="./picture/device5.png" alt="" />
+        </div>
+        <p>5 device nearby</p>
+        <a href="#">See all on map &#10095;</a>
+      </div>
+    </div>
+    <div class="title2"><h1 class="task_title">任務列表</h1></div>
+
+    <section class="task_list">
+      <div class="task_left block">
+        <div class="task_icon">
+          <div class="task_block"></div>
+          <p>
+            <span class="symbol">&#128712;</span>
+            <sapn> 還有 1 任務未達成</sapn>
+          </p>
+          <img src="./picture/Rectangle 110.png" alt="進度條" />
+        </div>
+        <div class="task_text">
+          <h3>Lucy's iPad</h3>
+          <p>home . 2 min ago</p>
+          <a href="#">See all on map &#10095;</a>
+          <button class="today_task">查看今天任務</button>
+        </div>
+      </div>
+      <div class="task_right">
+        <div class="task_accomplish block">
+          <h3>5 <br />已完成</h3>
+        </div>
+        <div class="task_unfinish block">
+          <h3>3<br />未完成</h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="title2"><h1>我參與的案件</h1></div>
+    <section class="join block">
+      <div class="join_left join_icon"></div>
+      <div class="join_right">
+        <p>Sonya's Apple Watch</p>
+        <a href="#">See all on map &#10095;</a>
+        <div class="button">
+          <button class="find">
+            <i class="fa-light fa-location-dot"></i>Find
+          </button>
+          <button class="Lodt">
+            <i class="fa-light fa-magnifying-glass"></i>Lost
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="creadit">
+      <a href="https://www.flaticon.com/free-icons/pet" title="pet icons"
+        >Pet icons created by Freepik - Flaticon</a
+      >
+    </section>
+
+    <footer>
+      <div class="container">
+        <a href="#">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 19.7327H18C18.2652 19.7327 18.5196 19.6273 18.7071 19.4398C18.8946 19.2523 19 18.9979 19 18.7327V8.22269C19.0001 8.07031 18.9654 7.91991 18.8985 7.78299C18.8316 7.64608 18.7343 7.52626 18.614 7.43269L10.614 1.21069C10.4385 1.07414 10.2224 1 10 1C9.7776 1 9.56154 1.07414 9.386 1.21069L1.386 7.43269C1.26572 7.52626 1.16841 7.64608 1.10152 7.78299C1.03462 7.91991 0.999895 8.07031 1 8.22269V18.7327C1 18.9979 1.10536 19.2523 1.29289 19.4398C1.48043 19.6273 1.73478 19.7327 2 19.7327H7M13 19.7327V13C13 12.4477 12.5523 12 12 12H8C7.44772 12 7 12.4477 7 13V19.7327M13 19.7327H7"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <p>首頁</p>
+        </a>
+        <a href="#">
+          <svg
+            width="22"
+            height="23"
+            viewBox="0 0 22 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="11"
+              cy="11.5"
+              r="10"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5465 3.2252C13.9248 3.64467 13.0748 4.23764 12.7775 4.6449C12.7407 4.69534 12.7001 4.79614 12.6498 4.92116C12.4924 5.31205 12.2397 5.93981 11.7087 6.0063C11.5264 6.02881 11.28 6.01305 11.0189 5.99618L11.018 5.99612C10.3183 5.95112 9.36262 5.88966 9.05672 6.72076C8.86208 7.24732 8.82832 8.67848 9.45727 9.42107C9.55853 9.53921 9.57766 9.75861 9.50903 10.005C9.41902 10.3279 9.23787 10.5248 9.18049 10.5653C9.07558 10.5041 8.86877 10.2657 8.72192 10.0963L8.70906 10.0815C8.35689 9.67085 7.91584 9.15891 7.34653 9.0014C7.15537 8.94841 6.94694 8.90406 6.74162 8.86037C6.72458 8.85675 6.70756 8.85313 6.69058 8.8495C6.07288 8.72011 5.37418 8.57272 5.21103 8.22618C5.09287 7.97426 5.09288 7.62846 5.09289 7.2632V7.25295C5.09289 6.78377 5.09289 6.25383 4.86337 5.73965C4.78357 5.55615 4.6663 5.39136 4.51908 5.25584C3.08459 6.74471 2.20638 8.68203 2.03206 10.7422C1.85775 12.8023 2.39795 14.8596 3.56188 16.5683C3.8286 16.9599 4.12435 17.3277 4.44564 17.6692C2.92921 16.0581 2 13.8881 2 11.501C2 6.5299 6.0299 2.5 11.001 2.5C12.26 2.5 13.4585 2.75845 14.5465 3.2252ZM18.0459 17.1041C18.1131 16.7683 18.1556 16.3822 18.1556 15.9434V15.8253C18.1556 14.7879 18.1556 14.3143 17.4221 13.8946C17.1126 13.7202 16.882 13.6133 16.6964 13.5289C16.2834 13.3421 16.01 13.2184 15.641 12.6783L15.5105 12.4848C15.1223 11.8941 14.8421 11.4688 13.7755 11.6376C11.6771 11.9706 11.5219 12.3397 11.4296 12.963L11.415 13.0654C11.2789 13.9756 11.2541 14.2828 11.6344 14.6822C13.0577 16.1752 13.9105 17.252 14.1693 17.882C14.2852 18.1656 14.5687 18.9757 14.4393 19.8195C13.3888 20.2537 12.2737 20.4818 11.1534 20.5008C13.9444 20.4545 16.4262 19.1379 18.0459 17.1041ZM10.839 20.5006C10.0261 20.486 9.21335 20.3612 8.4234 20.1251C7.06659 19.7196 5.83373 19.0026 4.81756 18.0419C6.3937 19.5325 8.50832 20.4595 10.839 20.5006Z"
+              fill="#ADADB7"
+            />
+          </svg>
+          <p>地圖</p>
+        </a>
+        <!-- 製造空a 空出位置 -->
+        <a href="#" class="blank"><p>我要通報</p></a>
+
+        <!-- 中央按鈕 -->
+        <a href="#"  class="report">
+          <div>
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 1.5V10.5M10 19.5V10.5M10 10.5H19M10 10.5H1"
+
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          
+        </a>
+        <a href="#">
+          <svg
+            width="22"
+            height="23"
+            viewBox="0 0 22 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="7"
+              cy="9.5"
+              r="2"
+              fill="#ADADB7"
+
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <circle
+              cx="14.5"
+              cy="7"
+              r="1.5"
+              fill="#ADADB7"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M3.18573 17.2918C3.69796 15.6732 5.21199 14.5 7.00002 14.5C9.20916 14.5 11 16.2909 11 18.5V21.5"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M10 14.6906C10.59 12.8408 12.3337 11.5 14.3931 11.5C16.9374 11.5 19 13.5467 19 16.0714V17.5"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle
+              cx="11"
+              cy="11.5"
+              r="10"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <p>社群</p>
+        </a>
+        <a href="#">
+          <svg
+            width="16"
+            height="23"
+            viewBox="0 0 16 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="6.5"
+              r="5"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M15 21.5C15 17.634 11.866 14.5 8 14.5C4.13401 14.5 1 17.634 1 21.5"
+
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <p>個人首頁</p>
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>
