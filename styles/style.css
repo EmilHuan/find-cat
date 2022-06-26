@@ -478,8 +478,8 @@ footer div.container a:hover p, footer div.container a:active p {
 
 footer div.container a.report {
   position: absolute;
-  height: 11vw;
-  width: 11vw;
+  height: 5rem;
+  width: 5rem;
   bottom: 1.5rem;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
