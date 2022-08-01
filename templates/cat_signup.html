@@ -1,0 +1,59 @@
+{% extends "cat_base.html" %} <!--宣告樣板繼承 base.html-->
+{% block title %}註冊 | 喵星人{% endblock title %} <!--利用 block title 設置 login.html的title-->
+{% block content %} <!--利用 block content 設置 login.html 的內容-->
+<form method="post" action={{ url_for("signup") }}>
+    <h2>註冊喵星人 app</h2>
+        <p>
+            <label>真實姓名<br></label>
+            <input type="text" placeholder="輸入姓名" name="actualname"/>
+        </p>
+        <p>
+            <label>暱稱 (使用者名稱)<br></label>
+            <input type="text" placeholder="輸入暱稱" name="username"/>
+        </p>
+        <p>
+            <label>年齡<br></label>
+            <input type="number" placeholder="輸入年齡" name="userage" min="0" max="200"/>
+        </p>
+        <p>
+            <label>性別<br></label>
+            <input type="radio" name="gender" value="女"/> 女
+            <input type="radio" name="gender" value="男"/> 男
+            <input type="radio" name="gender" value="非二元性別"/> 非二元性別
+
+        </p>
+        <p>
+            <label>身份別<br></label>
+            <input type="radio" name="role" value="一般民眾"/> 一般民眾
+            <input type="radio" name="role" value="研究人員"/> 研究人員
+            <input type="radio" name="role" value="動保團體"/> 動保團體
+        </p>
+
+        <p>
+            <label>聯絡電話<br></label>
+            <input type="tel" placeholder="輸入電話" name="phonenumber" />
+        </p>
+
+        <p>
+            <label>常用信箱<br></label>
+            <input type="text" placeholder="輸入信箱" name="email" />
+        </p>
+
+        <p>
+            <label>密碼<br></label>
+            <input type="text" placeholder="輸入密碼" name="password" />
+        </p>
+        <p>
+            <label>確認密碼<br></label>
+            <input type="text" placeholder="再次輸入密碼" name="password_check" />
+        </p>
+      <!-- 要不要密碼？ -->
+        <p>
+        <button type="submit">註冊</button>
+        </p>
+        
+    <a href="http://127.0.0.1:5000/find_cat">
+        <input type="button" value="回首頁">
+    </a>
+</form>
+{% endblock content %}

@@ -1,0 +1,4 @@
+生成當下環境的套件清單：pip freeze > requirements.txt
+(執行後會在資料夾內生成 requirements.txt 檔案)
+
+利用清單檔案一次安裝所有套件：pip insall  -r ".\requirements.txt" (讓別人快速安裝全部所需套件)
